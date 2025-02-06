@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reseñas y Contacto</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="lugares.html">Lugares Icónicos</a></li>
+      <li><a href="gastronomia.html">Gastronomía</a></li>
+      <li><a href="contacto.html">Reseñas y Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- Sección de reseñas -->
+    <section>
+      <h2>Reseñas de nuestros visitantes</h2>
+      <!-- Formulario para dejar una reseña -->
+      <form id="review-form">
+        <label for="reviewer-name">
+          Nombre:
+          <input type="text" id="reviewer-name" placeholder="Tu nombre" required>
+        </label>
+        <label for="review-stars">
+          Puntuación:
+          <select id="review-stars">
+            <option value="5">⭐⭐⭐⭐⭐ - Excelente</option>
+            <option value="4">⭐⭐⭐⭐ - Muy bueno</option>
+            <option value="3">⭐⭐⭐ - Bueno</option>
+            <option value="2">⭐⭐ - Regular</option>
+            <option value="1">⭐ - Malo</option>
+          </select>
+        </label>
+        <label for="review-comment">
+          Reseña:
+          <textarea id="review-comment" rows="4" placeholder="Escribe tu reseña aquí..." required></textarea>
+        </label>
+        <button type="submit">Enviar Reseña</button>
+      </form>
+
+      <!-- Contenedor de reseñas -->
+      <div id="reviews-container">
+        <h3>Reseñas:</h3>
+        <ul id="reviews-list">
+          <!-- Las reseñas aparecerán aquí -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section>
+      <h2>Contáctanos</h2>
+      <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Descubre París</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts.js"></script>
+</body>
+</html>
